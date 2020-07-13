@@ -232,28 +232,37 @@
     <!-- 编辑博客页面的组件 -->
     <template id="myedit">
         <div>
-            <form>
+            <form method="post">
+                <input type="hidden" :value="date" name="time" />
                 <div class="form-group row">
-                    <label for="inputTitle" class="col-md-2 col-form-label">标题：</label>
+                    <label for="title" class="col-md-2 col-form-label">标题：</label>
                     <div class="col-md-10">
-                        <input type="text" class="form-control" id="inputTitle">
+                        <input type="text" class="form-control" id="title" autofocus="autofocus" required="required"
+                            name="title" />
                     </div>
                 </div>
                 <div class="form-group row">
-                    <label for="selectCover" class="col-md-2 col-form-label">封面图片：</label>
+                    <label for="author" class="col-md-2 col-form-label">作者：</label>
                     <div class="col-md-10">
-                        <input type="file" class="form-control-file" id="selectCover" v-on:change="uploadFile()">
+                        <input type="text" class="form-control" id="author" autofocus="autofocus" required="required"
+                            name="author" />
                     </div>
                 </div>
-                <img src="" alt="" class="preview" id="preview">
-                <div id="editor">
-                    <div id='edit'>
-                        <p>请输入博客内容，上方可以随意修改字体颜色、大小等样式！</p>
+                <div class="form-group row">
+                    <label for="selectCover" class="col-md-2 col-form-label" name="cover">封面图片：</label>
+                    <div class="col-md-10">
+                        <input type="file" class="form-control-file" id="selectCover" v-on:change="uploadFile()"
+                            required="required" />
                     </div>
                 </div>
-                <button type="submit" class="btn btn-primary" id="submit">发布博客</button>
+                <img src alt class="preview" id="preview" />
+                <div class="form-group" row>
+                    <label for="textarea">编辑博客内容：</label>
+                    <textarea class="form-control" id="textarea" rows="30" required="required"
+                        name="content"></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary" id="submit" @click="getDate()">发布博客</button>
             </form>
-
         </div>
     </template>
 
@@ -434,31 +443,6 @@
             },
             router
         })
-    </script>
-
-    <script src="./js/froala_editor.min.js"></script>
-    <script src="./js/plugins/tables.min.js"></script>
-    <script src="./js/plugins/lists.min.js"></script>
-    <script src="./js/plugins/colors.min.js"></script>
-    <script src="./js/plugins/font_family.min.js"></script>
-    <script src="./js/plugins/font_size.min.js"></script>
-    <script src="./js/plugins/block_styles.min.js"></script>
-    <script src="./js/plugins/media_manager.min.js"></script>
-    <script src="./js/plugins/video.min.js"></script>
-
-    <script>
-        $(function () {
-            $('#edit').editable({
-                inlineMode: false,
-                buttons: ['bold', 'italic', 'underline', 'strikeThrough', 'fontSize', 'color', 'sep', 'formatBlock', 'blockStyle', 'align', 'insertOrderedList', 'insertUnorderedList', 'outdent', 'indent', 'sep', 'createLink', 'insertImage', 'insertVideo', 'undo', 'redo', 'inserthorizontalrule'],
-                blockStyles: {
-                    'p': {
-                        'class1': 'Class1',
-                        'class2': 'Class2'
-                    }
-                }
-            })
-        });
     </script>
 </body>
 
