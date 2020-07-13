@@ -1,0 +1,25 @@
+@font-face {font-family: "iconfont";
+  src: url('iconfont.eot?t=1592209433810'); /* IE9 */
+  src: url('iconfont.eot?t=1592209433810#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('data:application/x-font-woff2;charset=utf-8;base64,d09GMgABAAAAAAO8AAsAAAAAB7wAAANvAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHEIGVgCDBgqDHIJ4ATYCJAMMCwgABCAFhG0HPxvHBhEVnGvIfiTYuMXFinqniyqhRXoTPJBd/pudPcTw4QvqYlfJh9SxEiuoU30NEEAwd2vTDvdGRSiW5Dz4Lv8jvxjhQug4X6erVIWskDXgmOlSPM9mc4osysbCAY4HNNCKEP0HeSD/Y3ldk8ozX1wMAVjjTyyitLzWgB4V0koAYsPa1UvRV/SoA9kCPQJtx0AV0YcGvdKuPAN69e+L3yQLPShoJKRj46qyFRR+031zlEcsR1ggCQi2swL2MJBALKCCWNRpn4PMQrFIrEO5OpysRUWgbOW1WND8SKm96D+eAkILybQFIBLCCnzTcTYEfHMchAKABEDLbUQOAjew2nXpJDI5TrW33Wwc9hiddDdNXI4xj2aEiUmP3fI2jbiPzLoaxm6EGoZch464GU9e9ETd3IaPepiPdxoMN17Hnwswzwjce11wOsPpZD7/JutmnHHYzXj1le9UJEztZZx+mXol2zSyfaVhleH1a9ObN+ZXr4wviXQRl7wCbu3zr1+nLB+uH+p7/sXX93i1TNm7a5W377+Hxz0v379RM5o1dKV1fvXoo/szJzz7d7V7j+3ZlSKzfY97Va3fdXWk/kBGVIvccMjotVYYfI853t6zU4i5yoThuOefg9Vjcw0+M47oCx78c8LzTVr54tJTe3feDvQ5tim58ke503D9N45mzZ2zeMncubc2H1c/f5LHqfbzZ/EF+emzepz67N7Nm3uz6zsbOGTIHfAb3rxlxG8g13CYemVjfx9LALDckC9lBY4cUYU88tP+hriClu2LHXL/621UAD7YNXmBcJoT9LfkEPCL8lTAYlmOiBikGvA5P3FKFt+uVQHgOgp+TC6AM5+XK90mZ4JAj1sBBR1+kOgJJarUWGiwIRVa9BQAbC1GP9yGC3YkZgVEeyMIjj5Q2LsPydGXqFJ/0HD3h5ZjR1gz5TKhjfCSKmHUgg7MC5Kl2TOTqDT7hGEbNZdFmnZDXpMX6qKqR3uckbfost5DI+LBM03QoeVwHAkWpoxWiiiytGXpu+5UWJp2SgmGNIEcYLyAxCIzLysL1fj5ExRsRhoPlAw5bxBbpdpBrVBNIPbyeVLJqxyzugsaQnjAY2QCOmRFIw0RsHTXy5AlCnFBYNEqcTk/VV4cr5yebxVgjUwjU4QUKvpH2qyeg1olPE7nZOl2OwA=') format('woff2'),
+  url('iconfont.woff?t=1592209433810') format('woff'),
+  url('iconfont.ttf?t=1592209433810') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+ */
+  url('iconfont.svg?t=1592209433810#iconfont') format('svg'); /* iOS 4.1- */
+}
+
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-shoucang:before {
+  content: "\e607";
+}
+
+.icon-fangdajing:before {
+  content: "\e610";
+}
+
